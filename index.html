@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Choose a Door</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <h1>Choose a Door</h1>
+  <p>You are inside a haunted house. Which door will you open?</p>
+
+  <!-- Each picture is put inside a button so it can be clicked -->
+  <!-- Images were generated using ChatGPT -->
+
+  <div class="doors">
+
+    <button class="door-button" onclick="openDoor(1)">
+      <img class="door-image" src="images/door1.png" alt="A purple wooden door in a stone arch">
+      Door 1
+    </button>
+
+    <button class="door-button" onclick="openDoor(2)">
+      <img class="door-image" src="images/door2.png" alt="A teal wooden door surrounded by cobwebs">
+      Door 2
+    </button>
+
+    <button class="door-button" onclick="openDoor(3)">
+      <img class="door-image" src="images/door3.png" alt="A golden wooden door in a stone arch">
+      Door 3
+    </button>
+
+  </div>
+
+  <div class="result_box">
+    <p id="result">Click a door to find out what happens.</p>
+    <p id="attempts">Attempts: 0</p>
+  </div>
+
+  <button class="reset" onclick="resetGame()">Start again</button>
+
+  <p class="note">Explore all three doors to find each outcome.</p>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

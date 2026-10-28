@@ -1,0 +1,62 @@
+/* Colours and spacing for the whole page */
+body {
+  background-color: #eeeaf3;
+  color: #292333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 30px 15px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+}
+
+/* Flexbox keeps the doors together and lets them wrap */
+.doors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+button {
+  background-color: #ffffff;
+  color: #292333;
+  font-size: 16px;
+  padding: 12px;
+  margin: 7px;
+  border: 2px solid #b9a9cd;
+}
+
+.door-button {
+  width: 200px;
+}
+
+/* Make each image fit inside its button */
+.door-image {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Result box holds the outcome and attempt count */
+.result_box {
+  margin: 0 auto 20px;
+  padding: 10px 15px;
+  background-color: #ffffff;
+}
+
+#result {
+  font-weight: bold;
+}
+
+#attempts, .note {
+  font-size: 14px;
+  color: #63576f;
+}
+
+.reset {
+  background-color: #ddd1ed;
+}
